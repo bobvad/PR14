@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#0097FF">
+    android:background="#0097FF"
+    android:onClick="OnLayout">
+
     <TextView
         android:id="@+id/textViewStep5"
         android:layout_width="wrap_content"
@@ -44,12 +46,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
 
     <RadioGroup
-        android:id="@+id/radioGroupGender"
+        android:id="@+id/rgGender"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
+        android:onClick="OnLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewGenderLabel">
@@ -58,19 +61,19 @@
             android:id="@+id/radioMale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="12dp"
             android:text="Мужской"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            android:padding="12dp" />
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioFemale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="12dp"
             android:text="Женский"
             android:textColor="@color/white"
-            android:textSize="18sp"
-            android:padding="12dp" />
+            android:textSize="18sp" />
 
     </RadioGroup>
 

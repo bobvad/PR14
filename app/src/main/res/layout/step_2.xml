@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/rgPeriod"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -88,6 +88,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="28dp"
         android:background="@drawable/btn_style"
+        android:onClick="OnLayout"
         android:text="ПРОДОЛЖИТЬ"
         android:textColor="#0097FF"
         android:textSize="16sp"

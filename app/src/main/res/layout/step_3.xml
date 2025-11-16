@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <CheckBox
-            android:id="@+id/checkBack"
+            android:id="@+id/isRear"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Спина"
@@ -57,7 +57,7 @@
             android:paddingStart="16dp" />
 
         <CheckBox
-            android:id="@+id/checkBiceps"
+            android:id="@+id/isBiceps"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Бицепцы"
@@ -68,7 +68,7 @@
             android:layout_marginTop="8dp" />
 
         <CheckBox
-            android:id="@+id/checkTriceps"
+            android:id="@+id/isTriceps"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Трицепцы"
@@ -79,7 +79,7 @@
             android:layout_marginTop="8dp" />
 
         <CheckBox
-            android:id="@+id/checkMersion"
+            android:id="@+id/isMuscles"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:text="Икроножные мышцы"
@@ -98,6 +98,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="28dp"
         android:background="@drawable/btn_style"
+        android:onClick="OnLayout"
         android:text="ПРОДОЛЖИТЬ"
         android:textColor="#0097FF"
         android:textSize="16sp"
