@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             }
             else
             {
-                setContentView(R.layout.step_3);
+                setContentView(R.layout.main);
                 nLayout = 6;
             }
         }

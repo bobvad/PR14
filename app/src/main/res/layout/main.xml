@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Заголовок "ВИДЫ ТРЕНИРОВОК" -->
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="#007BFF"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="ВИДЫ ТРЕНИРОВОК" />
+
+    <!-- Спина -->
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextView" />
+
+    <TextView
+        android:id="@+id/textViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBack"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBack"
+        android:text="Спина" />
+
+    <ImageView
+        android:id="@+id/imageViewBiceps"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bicepsc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBack" />
+
+    <TextView
+        android:id="@+id/textViewBiceps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBiceps"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBiceps"
+        android:text="Бицепсы" />
+
+    <ImageView
+        android:id="@+id/imageViewTriceps"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tritseps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBiceps" />
+
+    <TextView
+        android:id="@+id/textViewTriceps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTriceps"
+        app:layout_constraintTop_toTopOf="@+id/imageViewTriceps"
+        android:text="Трицепсы" />
+
+    <!-- Икроножные мышцы -->
+
+    <ImageView
+        android:id="@+id/imageViewCalves"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icronognie_mishca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTriceps" />
+
+    <TextView
+        android:id="@+id/textViewCalves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewCalves"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCalves"
+        android:text="Икроножные мышцы" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
