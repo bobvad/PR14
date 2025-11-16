@@ -26,6 +26,8 @@
         android:layout_marginTop="36dp"
         android:text="Добро пожаловать, в 'Личный фитнес тренер'. Как тебя зовут"
         android:textColor="@color/white"
+        android:gravity="center"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
