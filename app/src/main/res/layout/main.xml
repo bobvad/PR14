@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Заголовок "ВИДЫ ТРЕНИРОВОК" -->
     <TextView
         android:id="@+id/headerTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
+        android:text="ВИДЫ ТРЕНИРОВОК"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
         android:background="#007BFF"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:text="ВИДЫ ТРЕНИРОВОК" />
-
-    <!-- Спина -->
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageViewBack"
+        android:id="@+id/selectRear"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/spina"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headerTextView" />
 
@@ -41,24 +38,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:text="Спина"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageViewBack"
-        app:layout_constraintTop_toTopOf="@+id/imageViewBack"
-        android:text="Спина" />
+        app:layout_constraintStart_toStartOf="@+id/selectRear"
+        app:layout_constraintTop_toTopOf="@+id/selectRear" />
 
     <ImageView
-        android:id="@+id/imageViewBiceps"
+        android:id="@+id/selectBiceps"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/bicepsc"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewBack" />
+        app:layout_constraintTop_toBottomOf="@+id/selectRear" />
 
     <TextView
         android:id="@+id/textViewBiceps"
@@ -66,24 +64,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:text="Бицепсы"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageViewBiceps"
-        app:layout_constraintTop_toTopOf="@+id/imageViewBiceps"
-        android:text="Бицепсы" />
+        app:layout_constraintStart_toStartOf="@+id/selectBiceps"
+        app:layout_constraintTop_toTopOf="@+id/selectBiceps" />
 
     <ImageView
-        android:id="@+id/imageViewTriceps"
+        android:id="@+id/selectTriceps"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/tritseps"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewBiceps" />
+        app:layout_constraintTop_toBottomOf="@+id/selectBiceps" />
 
     <TextView
         android:id="@+id/textViewTriceps"
@@ -91,26 +90,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:text="Трицепсы"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageViewTriceps"
-        app:layout_constraintTop_toTopOf="@+id/imageViewTriceps"
-        android:text="Трицепсы" />
-
-    <!-- Икроножные мышцы -->
+        app:layout_constraintStart_toStartOf="@+id/selectTriceps"
+        app:layout_constraintTop_toTopOf="@+id/selectTriceps" />
 
     <ImageView
-        android:id="@+id/imageViewCalves"
+        android:id="@+id/selectMuscles"
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/icronognie_mishca"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewTriceps" />
+        app:layout_constraintTop_toBottomOf="@+id/selectTriceps" />
 
     <TextView
         android:id="@+id/textViewCalves"
@@ -118,11 +116,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:text="Икроножные мышцы"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageViewCalves"
-        app:layout_constraintTop_toTopOf="@+id/imageViewCalves"
-        android:text="Икроножные мышцы" />
+        app:layout_constraintStart_toStartOf="@+id/selectMuscles"
+        app:layout_constraintTop_toTopOf="@+id/selectMuscles" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
